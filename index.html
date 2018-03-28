@@ -15,18 +15,32 @@
 		background-color: #fff;
 	}
 
+
 	</style>
-	 
+
 </head>
 <body>
    <div class="container">
-   <form>
-   	<div class="form-group">
-		   		<label>Task Name</label>
-		   		<input type="text" class="form-control"></input>
+   		<form method="post">
+
+   			<div class="row">
+   				<div class="col">
+   					<div class="form-group">
+				   		<label>Task Name</label>
+				   		<input type="text" name="taskName" class="form-control"></input>
+				   	</div>  
+   			</div>
+   			<div class="col">
+   				<div class="form-group">
+		   		<label>Due Date</label>
+		   		<input type="date" name="taskDate" class="form-control"></input>
 		   	</div>
-		   	<button class="btn btn-primary btn-block">Add Task</button>
-		   </form>
+   			</div>
+   			</div>
+   	
+		   	
+		   	<button type="submit" class="btn btn-primary btn-block">Add Task</button>
+		</form>
 		   <hr>
 		   	<h3>To-do Items</h3>
 
